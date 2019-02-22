@@ -1,0 +1,26 @@
+:root {
+  --fs0: 5rem;
+  --fs1: 3rem;
+  --fs2: 2.25rem;
+  --fs3: 1.5rem;
+  --fs4: 1.25rem;
+  --fs5: 1rem;
+  --fs6: .875rem;
+  --fs7: .75rem;
+  --line-height-solid: 0.9;
+  --line-height-title: 1.25;
+  --line-height-copy: 1.5;
+  --measure: 30em;
+  --measure-narrow: 20em;
+  --measure-wide: 34em;
+  --height-1: 1rem;
+  --height-2: 2rem;
+  --height-3: 4rem;
+  --height-4: 8rem;
+  --height-5: 16rem;
+  --width-1: 1rem;
+  --width-2: 2rem;
+  --width-3: 4rem;
+  --width-4: 8rem;
+  --width-5: 16rem;
+}

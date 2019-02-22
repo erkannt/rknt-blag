@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+
+<body class="index-body">
+  <hgroup>
+    <h1><a href="{{ .Site.BaseURL }}">rknt</a></h1>
+    <h2>Personal Website of Daniel Haarhoff</h2>
+  </hgroup>
+  <main class="index-main">
+    {{ range .Data.Pages }}
+      <article>
+        <a href="{{ .Permalink }}">
+        <h1>{{ .Title }}</h1>
+        {{ if .Params.image }}
+          {{ with .Params.image }}
+          <img src=" {{ . }}" alt="">
+          {{ end }}
+        {{ end }}
+        </a>
+        <h2>
+          {{ .Description }}
+        </h2>
+      </article>
+    {{ end }}
+  </main>
+</body>
+
+{{ partial "footer.html" . }}

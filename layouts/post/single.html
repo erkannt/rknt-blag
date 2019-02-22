@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+
+<body class="single">
+  <nav>
+    <h1><a href="{{ .Site.BaseURL }}">rknt</a></h1>
+  </nav>
+  <main>
+    <header>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.image }}
+        <img src="{{ . }}" alt="">
+      {{ end }}
+    </header>
+
+    <article class="single-article">
+      {{ .Content }}
+    </article>
+  </main>
+
+</body>
+
+{{ partial "footer.html" . }}
