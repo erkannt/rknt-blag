@@ -1,7 +1,7 @@
 # How to build/watch
 
 ```
-cp -r src/img static/ && imageoptim static/img
+./opt-images.sh
 minify -w -r src/ -o static/
 hugo server
 ```
