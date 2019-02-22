@@ -3,13 +3,15 @@ title: "Screwless & Clueless"
 date: 2018-09-29T20:43:03+02:00
 draft: false
 description: "A hiking shelter in Serbia using traditional joinery"
-image: "/img/screwless_and_clueless/snow-1.jpg"
+image: "/img/screwless_and_clueless/Cabin_Photos-14.jpg"
 ---
 
 # Goal
 
 Through this project, they aimed to give participants a deeper, more intuitive understanding of timber’s properties and the value of old-growth knowledge.
 Included below is a description of the finished project and the process involved in its creation.
+
+![The cabin in its second winter.](/img/screwless_and_clueless/snow-1.jpg)
 
 # Location
 

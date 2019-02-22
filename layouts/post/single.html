@@ -1,19 +1,27 @@
 {{ partial "header.html" . }}
 
-<body class="single">
-  <nav>
-    <h1><a href="{{ .Site.BaseURL }}">rknt</a></h1>
-  </nav>
+<body>
   <main>
     <header>
-      <h1>{{ .Title }}</h1>
+      <hgroup>
+        <h1><a href="{{ .Site.BaseURL }}">rknt</a></h1>
+        <h1>{{ .Title }}</h1>
+      </hgroup>
       {{ with .Params.image }}
         <img src="{{ . }}" alt="">
       {{ end }}
     </header>
 
     <article class="single-article">
-      {{ .Content }}
+      {{ $reAltIn := "<p><img src=\"([^\"]+)\" alt=\"([^\"]+)\" /></p>" }}
+      {{ $reAltOut := "<figure><img src=\"$1\" alt=\"$2\"><figcaption>$2</figcaption></figure>" }}
+      {{ $altContent := .Content | replaceRE $reAltIn $reAltOut | safeHTML }}
+
+      {{ $reAltTitleIn := "<p><img src=\"([^\"]+)\" alt=\"([^\"]+)\" title=\"([^\"]+)\" /></p>" }}
+      {{ $reAltTitleOut := "<figure><img src=\"$1\" alt=\"$2\" title=\"$3\"><figcaption>$2</figcaption></figure>" }}
+      {{ $finalContent := $altContent | replaceRE $reAltTitleIn $reAltTitleOut | safeHTML }}
+
+      {{ $finalContent }}
     </article>
   </main>
 

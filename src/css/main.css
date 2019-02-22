@@ -3,7 +3,10 @@
 
 body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  max-width: 62rem;
+  margin: auto;
   padding-top: var(--height-3);
+  padding-bottom: var(--height-3);
   padding-left: var(--width-2);
   padding-right: var(--width-2);
 }
@@ -21,14 +24,44 @@ hgroup {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 hgroup * {
   line-height: var(--line-hight-solid);
 }
 hgroup h1 {
-  padding-right: var(--width-2);
+  font-size: 3rem;
 }
 
 main h2 {
   font-weight: 300;
+}
+
+.single-article {
+  display: grid;
+  grid-template-columns: 1fr minmax(20rem, 36rem) 1fr;
+}
+
+.single-article > h1, h2, p {
+  grid-column: 2;
+}
+
+.single-article > figure {
+  grid-column: 1 / 4;
+}
+
+.single-article figcaption {
+  font-style: italic;
+  text-align: right;
+}
+
+article > a img {
+  object-fit: cover;
+  max-height: 50vh;
+  width: 100%;
+}
+header > img {
+  object-fit: cover;
+  max-height: 50vh;
+  width: 100%;
 }
