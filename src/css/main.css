@@ -39,10 +39,10 @@ main h2 {
 
 .single-article {
   display: grid;
-  grid-template-columns: 1fr minmax(20rem, 36rem) 1fr;
+  grid-template-columns: 1fr minmax(20rem, 32rem) 1fr;
 }
 
-.single-article > h1, h2, p {
+.single-article > h1, h2, p, ul {
   grid-column: 2;
 }
 
