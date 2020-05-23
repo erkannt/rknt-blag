@@ -1,14 +1,18 @@
 # How to build/watch
 
+To rebuild on change, run in two terminal:
 ```
-./opt-images.sh
-minify -w -r src/ -o static/
+find ./src | entr make assets
 hugo server
+```
+
+Builds static site:
+```
+make public
 ```
 
 ## Requires
 
 - hugo
 - minify
-- imageoptim
-- imageoptim-cli 
+- imagemagick
