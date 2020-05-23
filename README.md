@@ -14,5 +14,4 @@ make public
 ## Requires
 
 - hugo
-- minify
 - imagemagick

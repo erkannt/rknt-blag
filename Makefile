@@ -3,10 +3,10 @@ img:
 	find ./static -name '*.jpg' -execdir sh -c "mogrify -resize 1000x1000> *.jpg" {} \;
 
 css:
-	minify -r src/css/ -o static/css/
+	cp -r src/css static/
 
 js:
-	minify -r src/js/ -o static/js/
+	cp -r src/js static/
 
 assets: css js img
 
