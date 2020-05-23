@@ -18,5 +18,6 @@
         from_secret: MINIO_SECRET_KEY
     commands:
     - mc config host add website https://website.minio.rknt.de $${MINIO_ACCESS_KEY} $${MINIO_SECRET_KEY}
-    - mc mb website/rknt.de || true
+    - mc rb website/rknt.de
+    - mc mb website/rknt.de
     - mc mirror --overwrite public website/rknt.de
