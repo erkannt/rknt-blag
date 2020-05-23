@@ -50,6 +50,10 @@ main h2 {
   grid-column: 1 / 4;
 }
 
+.gallery {
+  grid-column: 1 / 4;
+}
+
 .single-article figcaption {
   font-style: italic;
   text-align: right;
