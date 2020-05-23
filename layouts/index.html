@@ -6,7 +6,7 @@
     <h2>Personal Website of Daniel Haarhoff</h2>
   </hgroup>
   <main>
-    {{ range .Data.Pages }}
+    {{ range .Site.RegularPages }}
       <article>
         <a href="{{ .Permalink }}">
         <h1>{{ .Title }}</h1>
