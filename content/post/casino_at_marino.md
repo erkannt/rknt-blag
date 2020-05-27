@@ -1,10 +1,11 @@
 ---
 title: "Casino at Marino"
 date: 2014-09-29T20:43:03+02:00
-draft: true
-image: "/img/casino_at_marino/full.jpg"
+image: "/img/casino_at_marino/completed/View of the entire garden.jpg"
 description: "A lashed timber pavilion in Dublin Castle Garden"
 ---
+
+{{< load-photoswipe >}}
 
 The Casino at Marino is touted as [Dublin's Tardis]( http://casinomarino.ie/ ) by its Office of Public Works and rightly so.
 Resembling a mausoleum when viewed from its approach, the interior manages to nest a large number of rooms for entertaining as well the service areas that go with such an endeavour.
@@ -46,5 +47,3 @@ All of this had left us quite frustrated and we ended up waiting for most of of 
 In the end we erected the entire pavilion in a single Saturday, essentially when no one was there to complain ^^.
 
 {{< gallery dir="img/casino_at_marino/completed" />}}
-
-{{< load-photoswipe >}}
