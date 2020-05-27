@@ -1,7 +1,8 @@
 ---
 title: "Casino at Marino"
 date: 2014-09-29T20:43:03+02:00
-image: "/img/casino_at_marino/completed/View of the entire garden.jpg"
+images: 
+ - "/img/casino_at_marino/completed/View of the entire garden.jpg"
 description: "A lashed timber pavilion in Dublin Castle Garden"
 ---
 

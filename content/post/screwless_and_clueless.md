@@ -3,7 +3,8 @@ title: "Screwless & Clueless"
 date: 2018-09-29T20:43:03+02:00
 draft: false
 description: "A hiking shelter in Serbia using traditional joinery"
-image: "/img/screwless_and_clueless/Cabin_Photos-14.jpg"
+images:
+- "/img/screwless_and_clueless/Cabin_Photos-14.jpg"
 ---
 
 
