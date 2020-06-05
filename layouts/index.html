@@ -10,10 +10,8 @@
       <article>
         <a href="{{ .Permalink }}">
         <h1>{{ .Title }}</h1>
-        {{ if .Params.image }}
-          {{ with .Params.image }}
-          <img src=" {{ . }}" alt="">
-          {{ end }}
+        {{ range .Params.images }}
+          <img src="{{ . }}" alt="">
         {{ end }}
         </a>
         <h2>
